@@ -1,3 +1,4 @@
+import 'package:components_app_v3/src/providers/menu_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -15,6 +16,8 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _lista() {
+
+   print( menuProvider.opciones );
 
     return ListView(
       children: _listaItems(),
