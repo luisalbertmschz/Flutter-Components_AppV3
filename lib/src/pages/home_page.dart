@@ -1,4 +1,5 @@
 import 'package:components_app_v3/src/providers/menu_provider.dart';
+import 'package:components_app_v3/src/util/icon_string_util.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -8,7 +9,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
      appBar: AppBar(
-       title: Text('⚡ Componentes '),
+       title: Text('☄ Componentes '),
        backgroundColor: Colors.blue[900]
      ),
      body: _lista(),
@@ -56,7 +57,7 @@ return FutureBuilder(
       final widgetTemp = ListTile(
 
         title: Text( opt['texto']),
-        leading: Icon(LineIcons.projectDiagram, color: Colors.blueAccent),
+        leading: getIcon(opt['icon']),
         trailing: Icon(LineIcons.chevronRight, color: Colors.blueAccent),
         onTap:  (){ },
 

@@ -10,6 +10,7 @@ Esto es un repositorio de una app de Flutter desarrollada con la intención de c
 
 
 <img src="lib\data\pictures\JSONRead.jpg" width="18%"></img> 
+<img src="lib\data\pictures\IconsNew.jpg" width="18%"></img> 
 
 
 # 🎈 Iconos usados en la app
