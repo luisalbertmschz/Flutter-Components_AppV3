@@ -3,17 +3,17 @@
     "rutas" : [
         {
             "ruta" : "alert",
-            "icon" : "add_alert",
+            "icon" : "bell",
             "texto": "Alertas"
         },
         {
             "ruta" : "avatar",
-            "icon" : "accessibility",
+            "icon" : "male",
             "texto": "Avatars"
         },
         {
             "ruta" : "card",
-            "icon" : "folder_open",
+            "icon" : "folder",
             "texto": "Cards - Tarjetas"
         }
     ]
