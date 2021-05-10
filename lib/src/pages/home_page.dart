@@ -1,3 +1,4 @@
+import 'package:components_app_v3/src/pages/alerts_page.dart';
 import 'package:components_app_v3/src/providers/menu_provider.dart';
 import 'package:components_app_v3/src/util/icon_string_util.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ return FutureBuilder(
    print(snapshot.data);
 
    return ListView(
-      children: _listaItems(snapshot.data),
+      children: _listaItems(snapshot.data, context),
      );
 
 
@@ -48,7 +49,7 @@ return FutureBuilder(
     // );
   }
 
-  List<Widget> _listaItems( List<dynamic> data) {
+  List<Widget> _listaItems( List<dynamic> data, BuildContext context) {
 
     final List<Widget> opciones = [];
 
@@ -59,7 +60,17 @@ return FutureBuilder(
         title: Text( opt['texto']),
         leading: getIcon(opt['icon']),
         trailing: Icon(LineIcons.chevronRight, color: Colors.blueAccent),
-        onTap:  (){ },
+        onTap:  (){ 
+            
+            final route = MaterialPageRoute(
+              builder: (context)=> AlertsPage()
+
+            );
+
+            Navigator.push(context, route);
+
+
+        },
 
 
 
