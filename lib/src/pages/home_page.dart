@@ -62,26 +62,29 @@ return FutureBuilder(
         trailing: Icon(LineIcons.chevronRight, color: Colors.blueAccent),
         onTap:  (){ 
             
-            final route = MaterialPageRoute(
-              builder: (context)=> AlertsPage()
+          
 
-            );
+          Navigator.pushNamed( context, opt['ruta'] );
 
-            Navigator.push(context, route);
+
+
+
+          // Forma estática de navegar entre páginas 
+
+            // final route = MaterialPageRoute(
+            //   builder: (context)=> AlertsPage()
+
+            // );
+
+            // Navigator.push(context, route);
 
 
         },
-
-
-
 
       );
 
       opciones..add(widgetTemp)
               ..add( Divider());
-
-
-
 
      });
 
