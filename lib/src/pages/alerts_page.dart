@@ -12,7 +12,7 @@ class AlertsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        title: Text(' 🔔 Alerts Page'),
+        title: Text('Alerts Page'),
         backgroundColor: Colors.blue[900],
 
       ),

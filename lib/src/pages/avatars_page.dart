@@ -11,7 +11,7 @@ class AvatarsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         
-        title: Text('👤 Avatars Page'),
+        title: Text('Avatars Page'),
         backgroundColor: Colors.blue[900],
       
       
