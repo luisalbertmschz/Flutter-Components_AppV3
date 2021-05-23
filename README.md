@@ -11,7 +11,9 @@ Esto es un repositorio de una app de Flutter desarrollada con la intención de c
 
 <img src="lib\data\pictures\JSONRead.jpg" width="18%"></img> 
 <img src="lib\data\pictures\IconsNew.jpg" width="18%"></img> 
-
+<img src="lib\data\pictures\CardsPageModel1.jpg" width="18%"></img>
+![Fade-In Image DEMO ](https://github.com/luisalbertmschz/Flutter-Components_AppV3/blob/%F0%9F%9F%A2Development/lib/data/pictures/FadeInImage.mp4)
+![Fade-In Image DEMO ](lib\data\pictures\FadeInImage.mp4)
 
 # 🎈 Iconos usados en la app
 
