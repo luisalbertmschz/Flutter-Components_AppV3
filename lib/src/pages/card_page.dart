@@ -25,7 +25,7 @@ class CardPage extends StatelessWidget {
           _cardTipo1(),
 
           SizedBox(   //Use of SizedBox
-            width: 30.00,
+            height: 30.00,
           ),
 
          _cardTipo2(),
@@ -41,6 +41,9 @@ class CardPage extends StatelessWidget {
   _cardTipo1() {
 
     return Card(
+
+      elevation: 2.5,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
 
       child: Column(
 
@@ -99,6 +102,7 @@ class CardPage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 0, bottom: 0, right: 5, left: 5),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                   
+                  
                 ),
 
 
@@ -121,9 +125,12 @@ class CardPage extends StatelessWidget {
 
   }
 
+  
+
   _cardTipo2() {
 
-    return Card(
+    final card = Container(
+      
 
       child: Column(
 
@@ -134,6 +141,12 @@ class CardPage extends StatelessWidget {
             image:NetworkImage('https://images.unsplash.com/photo-1602608099803-96718a589bb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'),
 
             placeholder: AssetImage('lib/data/assets/jar-loading.gif'), 
+
+            fadeInDuration: Duration( milliseconds: 200),
+
+            height: 300.0,
+
+            fit: BoxFit.cover,
 
 
             ),
@@ -146,13 +159,51 @@ class CardPage extends StatelessWidget {
 
             Container(
               padding: EdgeInsets.all(10.00),
-              child: Text('Omitir')),
+              child: Text('🏝 Playita en Las Terrenas')),
+              
 
 
         ],
 
       ),
 
+    );
+
+    return Container(
+      decoration: BoxDecoration(
+
+        borderRadius: BorderRadius.circular(30.0),
+        color: Colors.white,
+
+        boxShadow: <BoxShadow>[
+
+          BoxShadow(
+            
+            color: Colors.black26,
+            blurRadius: 10.0,
+            spreadRadius: 2.0,
+            offset: Offset(2.0, 10.0),
+
+            
+            )
+        ]
+
+      ),
+
+    
+      child: ClipRRect(
+
+
+        borderRadius: BorderRadius.circular(30.0),
+        
+
+
+
+        child: card,
+
+
+
+      ),
     );
 
   }
