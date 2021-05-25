@@ -1,7 +1,7 @@
-import 'package:components_app_v3/src/pages/alerts_page.dart';
+import 'package:flutter/material.dart';
+
 import 'package:components_app_v3/src/providers/menu_provider.dart';
 import 'package:components_app_v3/src/util/icon_string_util.dart';
-import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
 class HomePage extends StatelessWidget {
