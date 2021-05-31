@@ -197,8 +197,6 @@ class CardPage extends StatelessWidget {
         borderRadius: BorderRadius.circular(30.0),
         
 
-
-
         child: card,
 
 
@@ -209,3 +207,4 @@ class CardPage extends StatelessWidget {
   }
 
 }
+
